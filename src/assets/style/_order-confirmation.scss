@@ -1,0 +1,259 @@
+.order {
+	display: flex;
+	gap: 32px;
+	padding: 96px;
+	background: #ffffff;
+
+	&__image img {
+		width: 592px;
+		max-height: 1392px;
+		// height: 100%;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+	}
+	&__header {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		&-title {
+				font-size: 36px;
+				line-height: 40px;
+				color: #171717;
+				font-weight: 600;
+		}
+		&-desc {
+				font-size: 16px;
+				line-height: 24px;
+				color: #575757;
+				font-weight: 500;
+		}
+	}
+	&__number {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		&-title {
+			color: #575757;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 500;
+		}
+		&-desc {
+			display: flex;
+			flex-direction: row;
+			gap: 8px;
+			font-weight: 600;
+			line-height: 24px;
+			font-size: 16px;
+			color: #4338CA;
+
+			p, img {
+				cursor: pointer;
+			}
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+
+		&-items {
+			display: flex;
+			flex-direction: column;
+			gap: 32px;
+		}
+		&-image {
+			img {
+				object-fit: contain;
+				width: 80px;
+				border-radius: 12px;
+				height: 80px;
+			}
+		}
+		&-wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+		&-left {
+			display: flex;
+			gap: 24px;
+			align-items: flex-start;
+		}
+		&-item {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+		&-title {
+			line-height: 28px;
+			font-size: 20px;
+			color: #171717;
+			font-weight: 600;
+		}
+		&-desc {
+			line-height: 24px;
+			font-size: 16px;
+			color: #575757;
+			font-weight: 500;
+		}
+		&-border {
+			width: 100%;
+			height: 1px;
+			background: #D4D4D4;
+		}
+		&-prices {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			align-items: flex-end;
+		}
+		&-discount {
+			font-size: 28px;
+			line-height: 18px;
+			color: #171717;
+			font-weight: 600;
+		}
+		&-price {
+			font-size: 18px;
+			line-height: 28px;
+			color: #525252;
+			font-weight: 500;
+			position: relative;
+			text-align: right;
+			display: inline-block;
+
+			&::before{
+				content: "";
+				background: #525252;
+				position: absolute;
+				width: 100%;
+				height: .5px;
+				top: 50%;
+				left: 0%;
+			}
+		}
+	}
+	&__subtotal {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+		}
+		&-items {
+			display: flex;
+			justify-content: space-between;
+		}
+		&-title {
+			font-size: 16px;
+			line-height: 24px;
+			color: #525252;
+			font-weight: 400;
+
+			display: flex;
+			gap: 16px;
+			align-items: center;
+		}
+		&-price {
+			font-size: 18px;
+			line-height: 28px;
+			color: #171717;
+			font-weight: 700;
+		}
+		&-button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 4px 10px;
+			background: #EEF2FF;
+			border-radius: 9999px;
+			border: 1px solid #4338CA;
+			
+			color: #4338CA;
+			font-size: 14px;
+			line-height: 20px;
+
+		}
+	}
+	&__total {
+		display: flex;
+		flex-direction: column;
+
+		&-title {
+			font-size: 16px;
+			line-height: 24px;
+			color: #171717;
+			font-weight: 600;
+		}
+		&-price {
+			line-height: 32px;
+			font-size: 24px;
+			color: #171717;
+			font-weight: 600;
+		}
+	}
+	&__address {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 32px;
+
+		&-wrapper,
+		&-payment {
+			grid-column: span 3 / span 3;
+		}
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			color: #525252;
+			padding: 0 0 44px 0;
+		}
+		&-subtitle {
+			line-height: 24px;
+			font-size: 16px;
+			font-weight: 500;
+		}
+		&-label {
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 500;
+		}
+
+		&-payment {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+		&-subtitle {
+			color: #525252;
+		}
+		&-container {
+			display: flex;
+			gap: 16px;
+			color: #525252;
+
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 500;
+		}
+		&-visa {
+			display: flex;
+			flex-direction: column;
+			gap: 2px;
+			&-title {
+				font-size: 14px;
+				line-height: 20px;
+				color: #171717;
+			}
+		}
+	}
+}

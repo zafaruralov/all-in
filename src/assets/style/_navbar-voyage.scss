@@ -1,0 +1,32 @@
+.navbar {
+  &-voyage {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    max-width: 1216px;
+    margin: 0 auto;
+
+    &__image {
+        width: 163px;
+        height: 36px;
+    }
+    &__wrapper {
+      display: flex;
+      gap: 80px;
+      flex: 1;
+      align-items: center;
+    }
+    &__items {
+      display: flex;
+      flex: 1;
+      gap: 32px;
+
+      &-title {
+        font-size: 16px;
+        line-height: 24px;
+        color: #525252;
+        font-weight: 500;
+      }
+    }
+  }
+}

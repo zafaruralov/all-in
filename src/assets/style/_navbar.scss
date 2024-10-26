@@ -1,0 +1,113 @@
+.navbar {
+    display: flex;
+    max-width: 1216px;
+    margin: 0 auto;
+    gap: 96px;
+    align-items: center;
+
+    &__icon{
+        width: 112px;
+        height: 32px;
+    }
+    &__wrapper {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        gap: 96px;
+      }
+
+      &__items{
+        display: flex;
+        flex: 1;
+        gap: 32px;
+      }
+      .link {
+        display: flex;
+        outline: none;
+        text-decoration: none;
+        line-height: 24px;
+        font-size: 16px;
+        color: #575757;
+        font-weight: 500;
+      }
+      .link:hover {
+        color: #171717;
+      }
+      .link:focus {
+        color: #171717;
+        box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+        border-radius: 4px;
+      }
+
+      &__actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+  background: none;
+  outline: inherit;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+.button:focus {
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+}
+
+.button {
+  height: 44px;
+  column-gap: 8px;
+  padding: 10px 16px;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+.primary {
+  padding: 9px 15px;
+}
+
+.secondary {
+  background: #4338ca;
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06);
+  color: #ffffff;
+}
+.secondary:hover,
+.secondary:focus {
+  background: #3730a3;
+}
+.secondary:disabled,
+.primary:disabled {
+  background: #f5f5f5;
+  box-shadow: none;
+  color: #a3a3a3;
+  pointer-events: none;
+}
+
+.primary {
+  border: 0.5px solid #e6e6e6;
+  background: #ffffff;
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06);
+  color: #171717;
+}
+.primary:hover,
+.primary:focus {
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  color: #0a0a0a;
+}
+.primary:focus {
+  box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+}
