@@ -17,6 +17,12 @@
     color: #171717;
     outline: none;
 
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    resize: none;
+    max-width: 721px;
+
     &:focus {
       box-shadow:
         0px 0px 0px 1px #444ce7,
@@ -34,11 +40,22 @@
     font-size: 14px;
     line-height: 20px;
     outline: none;
+    color: #A3A3A3;
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
     cursor: pointer;
+    transition: all .1s;
+
+    &.active {
+      background: #4338CA;
+      color: #fff;
+
+      img {
+        filter: brightness(2);
+      }
+    }
   }
 }

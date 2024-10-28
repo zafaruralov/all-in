@@ -1,0 +1,46 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  color: #171717;
+  font-size: 14px;
+  line-height: 20px;
+
+  &-sent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &__sent {
+      max-width: 480px;
+      border-radius: 12px;
+      background: #F9FAFB;
+      padding: 12px;
+      
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  }
+  &-received {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    &__received {
+      max-width: 480px;
+      border-radius: 12px;
+      border: 1px solid #E5E5E5;
+      padding: 12px;
+
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  }
+}
+.chat-ongoing {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  // overflow: hidden;
+  margin: 0 0 30px 0;
+}

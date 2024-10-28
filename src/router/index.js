@@ -6,10 +6,15 @@ const routes = [
         component: () => import("@/layout/layout.vue"),
         children: [
             {
-                path: "/",
-                name: "chat-introduction",
-                component: () => import("@/pages/chat/chat-introduction.vue")
-            },
+                path: '',
+                name: 'chat-introduction',
+                component: () => import('@/pages/chat/chat-introduction.vue')
+              },
+              {
+                path: ':id',
+                name: 'chat-with-id',
+                component: () => import('@/pages/chat/chat-introduction.vue')
+              }
         ]
     },
     {

@@ -4,7 +4,7 @@
       <img :src="importentStar" alt="importent-star" class="chat-footer__new-icon">
       <p class="chat-footer__new-title">Start new chat</p>
     </div>
-    <div class="chat-footer__sign" v-if="false">
+    <div class="chat-footer__sign" v-if="true">
       <div class="chat-footer__header">
         <h1 class="chat-footer__header-title">
           Let’s create an account

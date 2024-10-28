@@ -6,7 +6,7 @@
       </p>
     </div>
     <ul class="chat-menu__items">
-      <li class="chat-menu__item" v-for="item in history" :key="item.id">
+      <li class="chat-menu__item" v-for="item in history" :key="item.id" @click="pastMessages(item.id)">
         <img src="../../assets/image/file-list.svg" alt="file-list" class="chat-menu__item-icon">
         <p class="chat-menu__item-desc"> {{ item.desc }}</p>
       </li>
@@ -15,6 +15,13 @@
 </template>
 <script setup>
 import { reactive } from "vue"
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+function pastMessages(id) {
+  router.push({ path: `/${id}` });
+}
+
 
 const history = reactive([
   {
